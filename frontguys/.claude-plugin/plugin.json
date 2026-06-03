@@ -1,0 +1,20 @@
+{
+  "$schema": "https://anthropic.com/claude-code/plugin.schema.json",
+  "name": "frontguys",
+  "version": "1.0.0",
+  "description": "Skills Frontguys — design-to-dev complet : identité de marque, design system, composition de pages dans Figma, pratiques de développement & accessibilité RGAA (expertise, audit, specs).",
+  "author": {
+    "name": "Frontguys",
+    "email": "contact@frontguys.fr"
+  },
+  "homepage": "https://frontguys.fr",
+  "keywords": [
+    "design-system",
+    "figma",
+    "accessibilite",
+    "rgaa",
+    "wcag",
+    "branding",
+    "landing-page"
+  ]
+}
