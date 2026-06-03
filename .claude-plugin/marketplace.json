@@ -1,0 +1,20 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "frontguys-marketplace",
+  "description": "Marketplace local des skills Frontguys pour la démo design-to-dev.",
+  "owner": {
+    "name": "Frontguys",
+    "email": "contact@frontguys.fr"
+  },
+  "plugins": [
+    {
+      "name": "frontguys",
+      "description": "Skills Frontguys — identité de marque, design system, landing pages Figma, accessibilité RGAA (expertise, audit, specs).",
+      "author": {
+        "name": "Frontguys"
+      },
+      "category": "design",
+      "source": "./frontguys"
+    }
+  ]
+}
