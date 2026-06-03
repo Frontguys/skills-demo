@@ -1,0 +1,13 @@
+{
+  "extraKnownMarketplaces": {
+    "frontguys-marketplace": {
+      "source": {
+        "source": "directory",
+        "path": "."
+      }
+    }
+  },
+  "enabledPlugins": {
+    "frontguys@frontguys-marketplace": true
+  }
+}
