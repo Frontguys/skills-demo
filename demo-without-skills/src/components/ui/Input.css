@@ -1,0 +1,61 @@
+.fg-input {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-base-2);
+  width: 100%;
+}
+
+.fg-input__label {
+  font-size: var(--font-size-body2);
+  font-weight: var(--font-weight-medium);
+  color: var(--foreground-default);
+}
+
+.fg-input__optional {
+  font-weight: var(--font-weight-regular);
+  color: var(--foreground-subtle);
+}
+
+.fg-input__control {
+  height: 48px;
+  padding: 0 var(--spacing-base-4);
+  font-family: var(--font-family-1);
+  font-size: var(--font-size-body2);
+  color: var(--foreground-default);
+  background: var(--background-default);
+  border: var(--border-1) solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  transition: border-color 0.15s ease;
+}
+
+.fg-input__control::placeholder {
+  color: var(--foreground-subtle);
+}
+
+.fg-input__control:hover {
+  border-color: var(--border-default);
+}
+
+.fg-input__control:focus {
+  outline: 3px solid var(--brand-complementary);
+  outline-offset: 1px;
+  border-color: var(--border-interactive);
+}
+
+/* Error state — colour is not the only cue (border weight + icon + message). */
+.fg-input--error .fg-input__control {
+  border-color: var(--foreground-error);
+  border-width: var(--border-2);
+}
+
+.fg-input__error {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-base-1);
+  font-size: var(--font-size-caption1);
+  color: var(--foreground-error);
+}
+
+.fg-input__error-icon {
+  font-size: 1em;
+}

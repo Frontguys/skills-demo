@@ -1,0 +1,31 @@
+.fg-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-base-1);
+  color: var(--foreground-interactive);
+  font-family: var(--font-family-1);
+  cursor: pointer;
+}
+
+.fg-link__label {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.fg-link:hover .fg-link__label {
+  text-decoration-thickness: 2px;
+}
+
+.fg-link--standalone {
+  font-size: var(--font-size-body2);
+  line-height: 1.6;
+}
+
+.fg-link--inline {
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.fg-link__indicator {
+  font-size: 0.9em;
+}

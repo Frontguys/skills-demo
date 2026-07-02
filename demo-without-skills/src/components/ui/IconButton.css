@@ -1,0 +1,38 @@
+.fg-icon-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-lg);
+  border: var(--border-1) solid transparent;
+  cursor: pointer;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.fg-icon-button svg {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+.fg-icon-button--secondary {
+  background: transparent;
+  color: var(--foreground-interactive);
+  border-color: var(--border-interactive);
+}
+
+.fg-icon-button--secondary:hover {
+  background: var(--background-subtle);
+}
+
+.fg-icon-button--primary {
+  background: var(--background-accent);
+  color: var(--foreground-default-invert);
+  border-color: var(--background-accent);
+}
+
+.fg-icon-button--primary:hover {
+  background: var(--brand-complementary);
+  border-color: var(--brand-complementary);
+}

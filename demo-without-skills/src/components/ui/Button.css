@@ -1,0 +1,57 @@
+.fg-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-base-2);
+  font-family: var(--font-family-1);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.5;
+  border-radius: var(--radius-lg);
+  border: var(--border-1) solid transparent;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+  white-space: nowrap;
+}
+
+/* Sizes */
+.fg-button--small {
+  height: 40px;
+  padding: 0 var(--spacing-base-4);
+  font-size: var(--font-size-caption1);
+}
+
+.fg-button--medium {
+  height: 49px;
+  padding: 0 var(--spacing-base-6);
+  font-size: var(--font-size-body1);
+}
+
+.fg-button--large {
+  height: 56px;
+  padding: 0 var(--spacing-base-8);
+  font-size: var(--font-size-body1);
+}
+
+/* Primary */
+.fg-button--primary {
+  background: var(--background-accent);
+  color: var(--foreground-default-invert);
+  border-color: var(--background-accent);
+}
+
+.fg-button--primary:hover {
+  background: var(--brand-complementary);
+  border-color: var(--brand-complementary);
+}
+
+/* Secondary */
+.fg-button--secondary {
+  background: transparent;
+  color: var(--foreground-interactive);
+  border-color: var(--border-interactive);
+}
+
+.fg-button--secondary:hover {
+  background: var(--background-subtle);
+}

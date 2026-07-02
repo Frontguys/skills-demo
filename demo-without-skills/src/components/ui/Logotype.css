@@ -1,0 +1,27 @@
+.fg-logotype {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 2px;
+  text-decoration: none;
+  color: var(--brand-primary);
+}
+
+.fg-logotype__word {
+  font-family: var(--font-family-1);
+  font-weight: var(--font-weight-bold);
+  font-size: 26px;
+  font-style: italic;
+  letter-spacing: -0.5px;
+}
+
+.fg-logotype__badge {
+  font-family: var(--font-family-1);
+  font-weight: var(--font-weight-bold);
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  color: var(--brand-complementary);
+}
+
+.fg-logotype--mobile .fg-logotype__word {
+  font-size: 22px;
+}

@@ -1,0 +1,64 @@
+.fg-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-base-6);
+  width: 100%;
+  padding: var(--spacing-base-6);
+  background: var(--background-default);
+  border: var(--border-1) solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+}
+
+.fg-banner__person {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-base-4);
+}
+
+.fg-banner__avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.fg-banner__avatar--initials {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--background-subtle);
+  color: var(--brand-primary);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-body1);
+}
+
+.fg-banner__info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.fg-banner__title {
+  font-size: var(--font-size-caption1);
+  color: var(--foreground-subtle);
+}
+
+.fg-banner__name {
+  font-size: var(--font-size-body1);
+  font-weight: var(--font-weight-bold);
+  color: var(--foreground-default);
+}
+
+.fg-banner__role {
+  font-size: var(--font-size-body2);
+  color: var(--foreground-subtle);
+}
+
+@media (max-width: 720px) {
+  .fg-banner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

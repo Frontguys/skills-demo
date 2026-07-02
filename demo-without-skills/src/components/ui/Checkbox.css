@@ -1,0 +1,48 @@
+.fg-checkbox {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-base-3);
+  width: 100%;
+}
+
+.fg-checkbox__control {
+  appearance: none;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  margin-top: 2px;
+  border: var(--border-2) solid var(--border-default);
+  border-radius: var(--radius-md);
+  background: var(--background-default);
+  cursor: pointer;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.fg-checkbox__control:checked {
+  background: var(--background-accent);
+  border-color: var(--background-accent);
+}
+
+.fg-checkbox__control:checked::after {
+  content: '';
+  display: block;
+  width: 6px;
+  height: 11px;
+  margin: 1px auto 0;
+  border: solid var(--foreground-default-invert);
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.fg-checkbox__control:focus-visible {
+  outline: 3px solid var(--brand-complementary);
+  outline-offset: 2px;
+}
+
+.fg-checkbox__label {
+  font-size: var(--font-size-caption1);
+  line-height: 1.5;
+  color: var(--foreground-subtle);
+  cursor: pointer;
+}

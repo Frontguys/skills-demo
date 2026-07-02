@@ -1,0 +1,75 @@
+@import './tokens.css';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family-1);
+  color: var(--foreground-default);
+  background: var(--background-default);
+  font-size: var(--font-size-body2);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+/* Global visible focus ring — accessibility requirement from the design annotations. */
+:focus-visible {
+  outline: 3px solid var(--brand-complementary);
+  outline-offset: 2px;
+}
+
+/* Typography helpers matching the Figma text styles */
+.text-surtitle {
+  font-size: var(--font-size-body2);
+  font-weight: var(--font-weight-regular);
+  line-height: 1.55;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.text-heading2 {
+  font-size: var(--font-size-heading2);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.2;
+  letter-spacing: -0.4px;
+}
+
+.text-heading3 {
+  font-size: var(--font-size-heading3);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.2;
+}
+
+.text-subtitle {
+  font-size: var(--font-size-subtitle);
+  font-weight: var(--font-weight-regular);
+  line-height: 1.45;
+}
+
+.text-body1 {
+  font-size: var(--font-size-body1);
+  font-weight: var(--font-weight-regular);
+  line-height: 1.65;
+}
+
+.text-body2 {
+  font-size: var(--font-size-body2);
+  font-weight: var(--font-weight-regular);
+  line-height: 1.6;
+}
