@@ -1,0 +1,45 @@
+@import './styles/tokens.css';
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family-base);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-body2);
+  line-height: 1.6;
+  color: var(--foreground-default);
+  background: var(--background-default);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100svh;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+address {
+  font-style: normal;
+}
+
+a {
+  color: inherit;
+}
+
+button {
+  font-family: inherit;
+}

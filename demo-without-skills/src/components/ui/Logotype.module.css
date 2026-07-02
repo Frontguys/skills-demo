@@ -1,0 +1,21 @@
+.logotype {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 2px;
+  text-decoration: none;
+  line-height: 1;
+}
+
+.mark {
+  font-family: var(--font-family-logo);
+  font-weight: 700;
+  font-size: 32px;
+  color: var(--brand-primary);
+}
+
+.suffix {
+  font-family: var(--font-family-base);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-body1);
+  color: var(--brand-primary);
+}

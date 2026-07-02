@@ -1,0 +1,26 @@
+.wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-sm);
+}
+
+.input {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  margin-top: 2px;
+  accent-color: var(--brand-primary);
+  border: var(--border-width-1) solid var(--border-subtle);
+}
+
+.input:focus-visible {
+  outline: 4px solid var(--brand-complementary);
+  outline-offset: 2px;
+}
+
+.label {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-caption2);
+  color: var(--foreground-subtle);
+  line-height: 1.4;
+}

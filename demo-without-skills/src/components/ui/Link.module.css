@@ -1,0 +1,27 @@
+.link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xxs);
+  color: var(--foreground-interactive);
+  font-family: var(--font-family-base);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.link:hover {
+  color: var(--brand-complementary);
+}
+
+.link:focus-visible {
+  outline: 4px solid var(--brand-complementary);
+  outline-offset: 2px;
+}
+
+.standalone {
+  font-size: var(--font-size-body2);
+}
+
+.inline {
+  font-size: var(--font-size-caption2);
+  color: var(--foreground-subtle);
+}

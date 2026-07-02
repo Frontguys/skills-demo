@@ -1,0 +1,64 @@
+:root {
+  /* Colors */
+  --brand-primary: #004c61;
+  --brand-complementary: #00778f;
+
+  --foreground-default: #3c3c56;
+  --foreground-subtle: #62627f;
+  --foreground-interactive: #004c61;
+  --foreground-error: #991b1b;
+  --foreground-default-invert: #ffffff;
+
+  --background-default: #ffffff;
+  --background-default-alt: #f9fafb;
+  --background-subtle: #e9f9f9;
+  --background-fade: rgba(0, 76, 97, 0);
+  --background-accent: #004c61;
+
+  --border-default: #3c3c56;
+  --border-subtle: #ccccdb;
+  --border-interactive: #004c61;
+  --border-width-1: 1px;
+  --border-width-2: 2px;
+
+  /* Radius */
+  --radius-md: 4px;
+  --radius-lg: 8px;
+
+  /* Spacing */
+  --spacing-none: 0px;
+  --spacing-xxs: 4px;
+  --spacing-xs: 8px;
+  --spacing-sm: 12px;
+  --spacing-md: 16px;
+  --spacing-base-1: 4px;
+  --spacing-base-2: 8px;
+  --spacing-base-3: 12px;
+  --spacing-base-4: 16px;
+  --spacing-base-6: 24px;
+  --spacing-base-8: 32px;
+  --spacing-base-10: 40px;
+  --spacing-base-12: 48px;
+  --spacing-base-14: 56px;
+  --spacing-base-20: 80px;
+  --spacing-base-24: 96px;
+  --size-small: 20px;
+  --size-medium: 24px;
+
+  /* Typography */
+  --font-family-base: 'Reddit Sans', system-ui, sans-serif;
+  --font-family-logo: 'Caveat', cursive;
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  --font-size-caption2: 12px;
+  --font-size-caption1: 14px;
+  --font-size-body2: 16px;
+  --font-size-body1: 18px;
+  --font-size-subtitle: 20px;
+  --font-size-heading5: 20px;
+  --font-size-heading3: 32px;
+  --font-size-heading2: 40px;
+}
