@@ -1,0 +1,48 @@
+.root {
+	display: flex;
+	align-items: flex-start;
+	gap: var(--spacing-base-3);
+	cursor: pointer;
+}
+
+/* Real native checkbox, restyled but never removed from the a11y tree */
+.control {
+	appearance: none;
+	flex-shrink: 0;
+	width: 20px;
+	height: 20px;
+	margin: 0;
+	margin-top: 2px;
+	background: var(--background-default);
+	border: var(--border-2) solid var(--border-default);
+	border-radius: var(--radius-md);
+	cursor: pointer;
+	display: grid;
+	place-content: center;
+
+	&::before {
+		content: "";
+		width: 11px;
+		height: 11px;
+		transform: scale(0);
+		transition: transform 0.1s ease;
+		box-shadow: inset 1em 1em var(--foreground-default-invert);
+		clip-path: polygon(14% 44%, 0 65%, 40% 100%, 100% 16%, 84% 3%, 40% 70%);
+	}
+
+	&:checked {
+		background: var(--background-accent);
+		border-color: var(--background-accent);
+
+		&::before {
+			transform: scale(1);
+		}
+	}
+}
+
+.label {
+	font-family: var(--font-family);
+	font-size: var(--font-size-body2);
+	line-height: 1.6;
+	color: var(--foreground-default);
+}

@@ -1,0 +1,123 @@
+.page {
+	display: flex;
+	flex-direction: column;
+	background: var(--background-default);
+}
+
+.section {
+	padding: var(--spacing-base-20) var(--spacing-base-24);
+	width: 100%;
+}
+
+/* Section backgrounds — alternating rhythm from Figma */
+.hero {
+	background: var(--background-subtle);
+	display: flex;
+	flex-direction: column;
+	gap: var(--spacing-base-6);
+	color: var(--foreground-default);
+}
+
+.contactDirect {
+	background: var(--background-default-alt);
+	display: flex;
+	flex-direction: column;
+	gap: var(--spacing-base-6);
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.engagements {
+	background: var(--background-default-alt);
+}
+
+/* Typography */
+.surtitle {
+	margin: 0;
+	font-size: var(--font-size-body2);
+	line-height: 1.55;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+}
+
+.h1 {
+	margin: 0;
+	font-size: var(--font-size-heading2);
+	font-weight: var(--font-weight-medium);
+	line-height: 1.2;
+	letter-spacing: -1px;
+	max-width: 60ch;
+}
+
+.subtitle {
+	margin: 0;
+	font-size: var(--font-size-subtitle);
+	line-height: 1.45;
+	max-width: 80ch;
+}
+
+.h2 {
+	margin: 0;
+	font-size: var(--font-size-heading3);
+	font-weight: var(--font-weight-medium);
+	line-height: 1.2;
+	color: var(--foreground-default);
+}
+
+/* Form */
+.formWrapper {
+	display: flex;
+	flex-direction: column;
+	gap: var(--spacing-base-6);
+	width: 650px;
+	max-width: 100%;
+}
+
+/* Engagements + adresse */
+.cols {
+	display: flex;
+	gap: var(--spacing-base-12);
+}
+
+.col {
+	display: flex;
+	flex-direction: column;
+	gap: var(--spacing-base-6);
+	flex: 1 0 0;
+	min-width: 0;
+}
+
+.bullets {
+	display: flex;
+	flex-direction: column;
+	gap: var(--spacing-base-4);
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-size: var(--font-size-body2);
+	line-height: 1.6;
+	color: var(--foreground-default);
+}
+
+.address {
+	margin: 0;
+	font-style: normal;
+	font-size: var(--font-size-body2);
+	line-height: 1.6;
+	color: var(--foreground-default);
+}
+
+@media (max-width: 900px) {
+	.section {
+		padding: var(--spacing-base-12) var(--spacing-base-6);
+	}
+
+	.cols {
+		flex-direction: column;
+		gap: var(--spacing-base-10);
+	}
+}

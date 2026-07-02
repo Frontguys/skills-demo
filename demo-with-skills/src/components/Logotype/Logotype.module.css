@@ -1,0 +1,23 @@
+.root {
+	display: inline-flex;
+	align-items: baseline;
+	gap: 2px;
+	text-decoration: none;
+	color: var(--brand-primary);
+	font-family: var(--font-family);
+	line-height: 1;
+}
+
+.word {
+	font-weight: var(--font-weight-bold);
+	font-style: italic;
+	font-size: 24px;
+	letter-spacing: -0.5px;
+}
+
+.suffix {
+	font-weight: var(--font-weight-bold);
+	font-size: 13px;
+	letter-spacing: 0.5px;
+	color: var(--brand-complementary);
+}

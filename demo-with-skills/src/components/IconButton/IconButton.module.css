@@ -1,0 +1,40 @@
+.root {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 40px;
+	height: 40px;
+	padding: 0;
+	border: var(--border-1) solid transparent;
+	border-radius: var(--radius-lg);
+	background: transparent;
+	color: var(--foreground-interactive);
+	cursor: pointer;
+	transition:
+		background-color 0.15s ease,
+		border-color 0.15s ease;
+
+	& svg {
+		width: 20px;
+		height: 20px;
+	}
+
+	&:disabled {
+		opacity: 0.5;
+		cursor: not-allowed;
+	}
+}
+
+.secondary {
+	border-color: var(--border-interactive);
+
+	&:hover:not(:disabled) {
+		background: var(--background-subtle);
+	}
+}
+
+.ghost {
+	&:hover:not(:disabled) {
+		background: var(--background-subtle);
+	}
+}

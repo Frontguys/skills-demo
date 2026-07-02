@@ -1,0 +1,34 @@
+.root {
+	display: inline-flex;
+	align-items: center;
+	gap: var(--spacing-base-1);
+	font-family: var(--font-family);
+	font-weight: var(--font-weight-regular);
+	line-height: 1.65;
+	color: var(--foreground-interactive);
+	/* Not identified by colour alone (RGAA 3.1 / WCAG 1.4.1) */
+	text-decoration: underline;
+	text-underline-offset: 2px;
+
+	&:hover {
+		text-decoration-thickness: 2px;
+	}
+
+	& .indicator {
+		width: 1em;
+		height: 1em;
+		flex-shrink: 0;
+	}
+}
+
+/* type=standalone — block-level, own line, sizes to content */
+.standalone {
+	font-size: var(--font-size-body1);
+}
+
+/* type=inline — flows within surrounding text, inherits size */
+.inline {
+	font-size: inherit;
+	line-height: inherit;
+	color: var(--foreground-subtle);
+}

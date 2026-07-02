@@ -1,0 +1,41 @@
+@import "./tokens.css";
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: var(--font-family);
+	color: var(--foreground-default);
+	background: var(--background-default);
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
+
+/* Visible focus ring for keyboard users — never remove the outline (RGAA 10.7 / WCAG 2.4.7) */
+:where(a, button, input, textarea, [tabindex]):focus-visible {
+	outline: var(--border-2) solid var(--border-interactive);
+	outline-offset: 2px;
+	border-radius: var(--radius-md);
+}
+
+/* Skip-link visually hidden until focused */
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	white-space: nowrap;
+	border: 0;
+}

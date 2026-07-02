@@ -1,0 +1,81 @@
+.root {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 128px;
+	padding-inline: var(--spacing-base-24);
+	background: var(--background-default);
+	width: 100%;
+}
+
+.skipLink {
+	position: absolute;
+	left: var(--spacing-base-4);
+	top: -100px;
+	z-index: 10;
+	padding: var(--spacing-base-2) var(--spacing-base-4);
+	background: var(--background-accent);
+	color: var(--foreground-default-invert);
+	border-radius: var(--radius-md);
+	text-decoration: none;
+	transition: top 0.15s ease;
+
+	&:focus {
+		top: var(--spacing-base-4);
+	}
+}
+
+.nav {
+	display: flex;
+	align-items: center;
+	gap: var(--spacing-base-6);
+}
+
+.list {
+	display: flex;
+	align-items: center;
+	gap: var(--spacing-base-2);
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.item {
+	display: flex;
+	align-items: center;
+	height: 48px;
+	padding-inline: var(--spacing-base-4);
+	border-radius: var(--radius-lg);
+	color: var(--foreground-interactive);
+	font-size: var(--font-size-body1);
+	text-decoration: none;
+	white-space: nowrap;
+
+	&:hover {
+		background: var(--background-subtle);
+	}
+
+	&[aria-current="page"] {
+		text-decoration: underline;
+		text-underline-offset: 4px;
+	}
+}
+
+/* No dedicated mobile mockup — degrade gracefully instead of overflowing. */
+@media (max-width: 900px) {
+	.root {
+		height: auto;
+		flex-wrap: wrap;
+		gap: var(--spacing-base-4);
+		padding: var(--spacing-base-4) var(--spacing-base-6);
+	}
+
+	.nav {
+		flex-wrap: wrap;
+		gap: var(--spacing-base-2);
+	}
+
+	.list {
+		flex-wrap: wrap;
+	}
+}

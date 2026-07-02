@@ -1,0 +1,74 @@
+.root {
+	display: flex;
+	align-items: center;
+	gap: var(--spacing-base-6);
+	width: 100%;
+	padding: var(--spacing-base-6);
+	background: var(--background-default);
+	border: var(--border-1) solid var(--border-subtle);
+	border-radius: var(--radius-lg);
+}
+
+.avatar {
+	flex-shrink: 0;
+	width: 104px;
+	height: 104px;
+	border-radius: 50%;
+	object-fit: cover;
+	background: var(--background-subtle);
+	display: grid;
+	place-content: center;
+	color: var(--brand-primary);
+	font-weight: var(--font-weight-bold);
+	font-size: var(--font-size-heading3);
+}
+
+.body {
+	display: flex;
+	flex-direction: column;
+	gap: var(--spacing-base-1);
+	flex: 1 0 0;
+	min-width: 0;
+}
+
+.title {
+	margin: 0;
+	font-size: var(--font-size-body2);
+	font-weight: var(--font-weight-regular);
+	color: var(--foreground-subtle);
+}
+
+.name {
+	margin: 0;
+	font-size: var(--font-size-heading5);
+	font-weight: var(--font-weight-bold);
+	color: var(--foreground-default);
+}
+
+.jobTitle {
+	margin: 0;
+	font-size: var(--font-size-body1);
+	color: var(--foreground-subtle);
+}
+
+.action {
+	flex-shrink: 0;
+}
+
+@media (max-width: 720px) {
+	.root {
+		flex-wrap: wrap;
+	}
+
+	.body {
+		flex-basis: calc(100% - 104px - var(--spacing-base-6));
+	}
+
+	.action {
+		flex-basis: 100%;
+	}
+
+	.action > * {
+		width: 100%;
+	}
+}
