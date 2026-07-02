@@ -17,6 +17,7 @@ temp/
 
 dist/
 node_modules/
+storybook-static/
 
 # Isolated Claude Code account/config for this directory (holds credentials)
 .claude-account/

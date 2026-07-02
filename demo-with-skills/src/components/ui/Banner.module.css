@@ -1,0 +1,53 @@
+.root {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--spacing-base-6);
+  width: 100%;
+  padding: var(--spacing-base-4) var(--spacing-base-6);
+  border-radius: var(--radius-lg);
+  border: var(--border-width-1) solid var(--border-subtle);
+  background: var(--background-default);
+
+  @media (max-width: 640px) {
+    justify-content: flex-start;
+
+    & > :global(button) {
+      width: 100%;
+    }
+  }
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-base-4);
+}
+
+.avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.title {
+  font-size: var(--font-size-caption1);
+  color: var(--foreground-subtle);
+  margin: 0 0 var(--spacing-xxs);
+}
+
+.name {
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-body1);
+  color: var(--foreground-default);
+  margin: 0;
+}
+
+.jobTitle {
+  font-size: var(--font-size-body2);
+  color: var(--foreground-subtle);
+  margin: 0;
+}
